@@ -1,0 +1,8 @@
+lbg - large background
+sbg - small background
+
+
+color codes
+#ff7978 - pinkish color rgb(255, 121, 120)
+#5d54a3 - purpuish blue
+#37cc8a - blue

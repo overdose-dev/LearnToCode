@@ -1,0 +1,30 @@
+body {
+  font-family: "Barlow", sans-serif;
+  background-image: url(images/OQCI8I0.jpg);
+}
+
+#container {
+  background: linear-gradient(
+      rgba(255, 121, 120, 0.7),
+      rgba(255, 121, 120, 0.7)
+    ),
+    url(images/memphis-colorful.png);
+  padding: 30px;
+  margin: 120px;
+}
+
+#text-head,
+#text-body {
+  margin-left: 70px;
+}
+
+#text-head {
+  color: white;
+  font-weight: 750;
+  font-size: 35px;
+}
+
+#text-body {
+  color: white;
+  font-weight: 300;
+}
