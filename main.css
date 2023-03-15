@@ -88,7 +88,7 @@ input[type="password"]:focus {
   text-align: center;
   width: 100%;
   box-sizing: border-box;
-  /* padding: 10px 22px; */
+  letter-spacing: 1px;
 }
 
 a {
