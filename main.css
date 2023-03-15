@@ -4,20 +4,31 @@ body {
 }
 
 #container {
-  background: linear-gradient(
-      rgba(255, 121, 120, 0.7),
-      rgba(255, 121, 120, 0.7)
-    ),
+  width: 1250px;
+  height: 500px;
+  background: linear-gradient(rgba(234, 69, 68, 0.7), rgba(234, 69, 68, 0.7)),
     url(images/memphis-colorful.png);
   padding: 30px;
-  margin: 120px;
+  margin: 90px;
 }
 
-#text-head,
-#text-body {
-  margin-left: 70px;
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  margin: 5px;
 }
 
+.grid-item-1 {
+  padding-right: 75px;
+  margin-top: 125px;
+  justify-content: center;
+  padding-left: 75px;
+}
+
+.grid-item-2 {
+  justify-content: center;
+  margin-top: 10px;
+}
 #text-head {
   color: white;
   font-weight: 750;
@@ -27,4 +38,66 @@ body {
 #text-body {
   color: white;
   font-weight: 300;
+}
+
+.info {
+  line-height: 20px;
+  font-weight: 50;
+  letter-spacing: 1px;
+}
+
+.free-trial-text {
+  color: white;
+  background-color: #5d54a3;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-right: 80px;
+}
+
+.form-container {
+  background-color: white;
+  justify-content: center;
+  display: flex;
+  border-radius: 10px;
+  padding: 30px;
+  margin-right: 80px;
+}
+
+input,
+button {
+  width: 100%;
+  padding: 10px 22px;
+  margin: 10px;
+  border: 2px solid darkgray;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border: 3px solid #abd1f3;
+}
+
+#submit {
+  background-color: #208859;
+  color: white;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  /* padding: 10px 22px; */
+}
+
+a {
+  text-decoration: none;
+  color: red;
+  font-style: italic;
+}
+
+.terms {
+  text-align: center;
+  font-weight: 500;
 }

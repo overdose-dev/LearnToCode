@@ -15,15 +15,59 @@
   </head>
   <body>
     <section id="container">
-      <h1 id="text-head">
-        Learn to code by <br />
-        watching others
-      </h1>
-      <span id="text-body">
-        See how experienced developers solve problems in real-time. Watching
-        scripted tutorials is great but understanding how developers think is
-        invaluable.
-      </span>
+      <div class="grid-container">
+        <div class="grid-item grid-item-1">
+          <h1 id="text-head">
+            Learn to code by <br />
+            watching others
+          </h1>
+          <span id="text-body">
+            <div class="container info">
+              See how experienced developers solve problems in real-time.
+              Watching scripted tutorials is great but understanding how
+              developers think is invaluable.
+            </div>
+          </span>
+        </div>
+        <div class="grid-item grid-item-2">
+          <div class="free-trial-text">
+            <b>Try it free for 7 days</b> then $20/mo thereafter
+          </div>
+          <div class="container form-container">
+            <form class="form">
+              <input
+                type="text"
+                placeholder="First Name"
+                required
+                minlength="3"
+                maxlength="40"
+              />
+              <br />
+              <input
+                type="text"
+                placeholder="Last Name"
+                required
+                minlength="3"
+                maxlength="40"
+              />
+              <br />
+              <input type="email" placeholder="Email Address" required /> <br />
+              <input
+                type="password"
+                placeholder="Password"
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+                required
+              />
+              <br />
+              <button id="submit">CLAIM YOUR FREE TRIAL</button>
+              <p class="terms">
+                By clicking this button, you agree to our
+                <a href="https://google.com" target="_blank">Terms and Conditions</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
   </body>
 </html>

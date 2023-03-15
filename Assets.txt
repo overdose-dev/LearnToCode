@@ -3,6 +3,6 @@ sbg - small background
 
 
 color codes
-#ff7978 - pinkish color rgb(255, 121, 120)
+#ea4544 - pinkish color rgb(234, 69, 68)
 #5d54a3 - purpuish blue
 #37cc8a - blue
