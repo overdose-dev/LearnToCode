@@ -1,11 +1,15 @@
-body {
+* {
   font-family: "Barlow", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
   background-image: url(images/OQCI8I0.jpg);
 }
 
 #container {
   width: 1250px;
-  height: 500px;
+  height: 600px;
   background: linear-gradient(rgba(234, 69, 68, 0.7), rgba(234, 69, 68, 0.7)),
     url(images/memphis-colorful.png);
   padding: 30px;
@@ -20,15 +24,16 @@ body {
 
 .grid-item-1 {
   padding-right: 75px;
-  margin-top: 125px;
+  margin-top: 135px;
   justify-content: center;
   padding-left: 75px;
 }
 
 .grid-item-2 {
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 30px;
 }
+
 #text-head {
   color: white;
   font-weight: 750;
@@ -55,6 +60,7 @@ body {
   border-radius: 10px;
   margin-bottom: 10px;
   margin-right: 80px;
+  letter-spacing: 1.5px;
 }
 
 .form-container {
@@ -100,4 +106,74 @@ a {
 .terms {
   text-align: center;
   font-weight: 500;
+  line-height: 1.5;
+}
+
+@media (max-width: 480px) and (orientation: portrait) {
+  * {
+    background-image: none;
+  }
+
+  body {
+    background: linear-gradient(rgba(234, 69, 68, 0.7), rgba(234, 69, 68, 0.7)),
+      url(images/memphis-colorful.png);
+  }
+
+  #container {
+    width: 460px;
+    height: 500px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .grid-container {
+    display: grid;
+    margin: 10px;
+    grid-template-columns: 2fr;
+  }
+
+  .grid-item-1 {
+    margin-top: 75px;
+    text-align: center;
+    /* font-weight: 600; */
+    margin-bottom: 40px;
+    padding-right: 0;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  #text-head {
+    font-weight: 900;
+    font-size: 30px;
+    letter-spacing: 0.5px;
+    line-height: 35px;
+  }
+
+  #text-body {
+    font-weight: 400;
+  }
+
+  .info {
+    line-height: 25px;
+    letter-spacing: 1px;
+  }
+
+  .free-trial-text {
+    text-align: center;
+    margin-bottom: 35px;
+    margin-right: 0;
+  }
+
+  .form-container {
+    margin-right: 0;
+  }
+
+  input,
+  button {
+    width: 95%;
+  }
+
+  #submit {
+    width: 95%;
+  }
 }
