@@ -55,11 +55,9 @@ body {
   color: white;
   background-color: #5d54a3;
   text-align: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 15px 0px;
   border-radius: 10px;
-  margin-bottom: 10px;
-  margin-right: 80px;
+  margin: 0px 80px 10px 0px;
   letter-spacing: 1.5px;
 }
 
@@ -94,7 +92,8 @@ input[type="password"]:focus {
   text-align: center;
   width: 100%;
   box-sizing: border-box;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
+  font-weight: bold;
 }
 
 a {
@@ -107,6 +106,87 @@ a {
   text-align: center;
   font-weight: 500;
   line-height: 1.5;
+}
+
+@media (max-width: 768px) /* and (min-aspect-ratio: 7/4) */ {
+  * {
+    background-image: none;
+    box-sizing: border-box;
+  }
+
+  body {
+    background: linear-gradient(rgba(234, 69, 68, 0.7), rgba(234, 69, 68, 0.7)),
+      url(images/memphis-colorful.png);
+  }
+
+  #container {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+  }
+
+  .grid-container {
+    display: grid;
+    margin: 10px;
+    grid-template-columns: 2fr;
+  }
+
+  .grid-item-1 {
+    margin: 75px 0px 40px;
+    text-align: center;
+    padding-right: 0;
+    place-items: center;
+    padding-left: 0;
+  }
+
+  .grid-item-2 {
+    margin: 50px;
+  }
+
+  #text-head {
+    font-weight: 900;
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 42px;
+  }
+
+  #text-body {
+    font-size: 20px;
+    font-weight: lighter;
+  }
+
+  .info {
+    margin: 15px;
+    line-height: 27px;
+  }
+
+  .free-trial-text {
+    text-align: center;
+    margin-bottom: 35px;
+    margin-right: 0;
+    padding: 22px;
+  }
+
+  .form-container {
+    margin-right: 0;
+    padding-left: 40px;
+    /* padding: 20px; */
+    padding-top: 40px;
+    display: block;
+  }
+
+  input,
+  button {
+    width: 95%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    padding: 15px;
+  }
+
+  #submit {
+    width: 95%;
+  }
 }
 
 @media (max-width: 480px) and (orientation: portrait) {
@@ -133,10 +213,9 @@ a {
   }
 
   .grid-item-1 {
-    margin-top: 75px;
+    margin: 75px 0px 40px;
     text-align: center;
     /* font-weight: 600; */
-    margin-bottom: 40px;
     padding-right: 0;
     justify-content: center;
     padding-left: 0;
