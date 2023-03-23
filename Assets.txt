@@ -3,6 +3,14 @@ sbg - small background
 
 
 color codes
-#ea4544 - pinkish color rgb(234, 69, 68)
-#5d54a3 - purpuish blue
-#37cc8a - blue
+#FF7A7A - pinkish color rgb(255, 122, 122)
+#6055A5 - purpuish blue rgb(96, 85, 165)
+#3E3C49 - dark blue rgb(62, 60, 73)
+#38cc8c - green rgb(56, 204, 140)
+#b9b6d3 - grayish blue rgb(185, 182, 211)
+
+
+Error messages 
+Receive an error message when the form is submitted if:
+-	Any input field is empty. The message for this error should say *"[Field Name] cannot be empty"*
+-	The email address is not formatted correctly (i.e. a correct email address should have like this structure: 'name@host.tld'). The message for this error should say *"Looks like this is not an email"*
