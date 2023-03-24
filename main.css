@@ -33,7 +33,7 @@ body {
 }
 
 .grid-item-2 {
-  margin-top: 5%;
+  margin-top: 6%;
 }
 
 #text-head {
@@ -74,7 +74,7 @@ body {
   justify-content: center;
   display: flex;
   border-radius: 10px;
-  padding: 10px 10px 10px;
+  padding: 0 10px 10px;
   box-shadow: 0 7px rgba(62, 60, 73, 0.3);
 }
 
@@ -87,7 +87,7 @@ body {
 input,
 button {
   width: 90%;
-  padding: 10px;
+  padding: 9px;
   border: 2px solid darkgray;
   border-radius: 4px;
   box-sizing: border-box;
@@ -96,7 +96,7 @@ button {
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus {
-  border: 3px solid #abd1f3;
+  border: 2px solid #abd1f3;
 }
 
 #submit {
@@ -114,6 +114,21 @@ input[type="password"]:focus {
 
 #submit:hover {
   color: rgba(211, 230, 221, 0.87);
+}
+
+.form #firstName_error,
+.form #lastName_error,
+.form #email_error,
+.form #pass_error {
+  margin: 5px -80px 0 0;
+  width: 345px;
+  font-size: 11px;
+  text-align: right;
+  padding: 0;
+  color: red;
+  font-style: italic;
+  font-weight: 500;
+  display: none;
 }
 
 a {

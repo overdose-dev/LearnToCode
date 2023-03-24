@@ -34,33 +34,45 @@
             <b>Try it free for 7 days</b> then $20/mo thereafter
           </div>
           <div class="container form-container">
-            <form class="form">
+            <form
+              id="form"
+              class="form"
+              onsubmit="return validate()"
+              action="message.html"
+            >
               <input
+                id="firstName"
+                name="firstName"
                 type="text"
                 placeholder="First Name"
-                required
-                minlength="3"
-                maxlength="40"
               />
+              <div id="firstName_error">First Name cannot be empty</div>
               <br />
               <input
+                id="lastName"
+                name="lastName"
                 type="text"
                 placeholder="Last Name"
-                required
-                minlength="3"
-                maxlength="40"
               />
-              <br />
-              <input type="email" placeholder="Email Address" required />
+              <div id="lastName_error">Last Name cannot be empty</div>
               <br />
               <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Email Address"
+              />
+              <div id="email_error">Looks like this is not an email</div>
+              <br />
+              <input
+                id="password"
+                name="password"
                 type="password"
                 placeholder="Password"
-                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
-                required
               />
+              <div id="pass_error">Password cannot be empty</div>
               <br />
-              <button id="submit">CLAIM YOUR FREE TRIAL</button>
+              <button id="submit" type="submit">CLAIM YOUR FREE TRIAL</button>
               <p class="terms">
                 By clicking this button, you agree to our
                 <a href="https://google.com" target="_blank"
@@ -72,5 +84,6 @@
         </div>
       </div>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>
