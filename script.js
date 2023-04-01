@@ -1,71 +1,53 @@
-var firstName = document.forms["form"]["firstName"];
-var lastName = document.forms["form"]["lastName"];
-var email = document.forms["form"]["email"];
-var password = document.forms["form"]["password"];
+const form = document.getElementById("form");
 
-var firstName_error = document.getElementById("firstName_error");
-var lastName_error = document.getElementById("lastName_error");
-var email_error = document.getElementById("email_error");
-var pass_error = document.getElementById("pass_error");
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  const firstName = document.getElementById("firstName");
+  const lastName = document.getElementById("lastName");
+  const email = document.getElementById("email");
+  const password = document.getElementById("password");
 
-firstName.addEventListener("textInput", firstName_verify);
-lastName.addEventListener("textInput", lastName_verify);
-email.addEventListener("textInput", email_verify);
-password.addEventListener("textInput", password_verify);
-
-function validate() {
-  if (firstName.value == "") {
+  if (firstName.value === "") {
     firstName.style.border = "2px solid red";
     firstName_error.style.display = "block";
-    return false;
-  }
-  if (lastName.value == "") {
-    lastName.style.border = "2px solid red";
-    lastName_error.style.display = "block";
-    return false;
-  }
-
-  if (email.value == "") {
-    email.style.border = "2px solid red";
-    email_error.style.display = "block";
-    return false;
-  }
-  if (password.value == "") {
-    password.style.border = "2px solid red";
-    pass_error.style.display = "block";
-    return false;
-  }
-}
-
-function firstName_verify() {
-  if (firstName.value.length >= 3) {
+    firstName_error.style.marginBottom = "15px";
+    firstName.style.marginBottom = "0px";
+  } else {
     firstName.style.border = "2px solid silver";
     firstName_error.style.display = "none";
-    firstName.focus();
-    return true;
+    firstName.style.marginBottom = "27px";
   }
-}
 
-function lastName_verify() {
-  if (lastName.value.length >= 3) {
+  if (lastName.value === "") {
+    lastName.style.border = "2px solid red";
+    lastName_error.style.display = "block";
+    lastName_error.style.marginBottom = "15px";
+    lastName.style.marginBottom = "0px";
+  } else {
     lastName.style.border = "2px solid silver";
     lastName_error.style.display = "none";
-    return true;
+    lastName.style.marginBottom = "27px";
   }
-}
 
-function email_verify() {
-  if (email.value.length >= 8) {
+  if (email.value === "") {
+    email.style.border = "2px solid red";
+    email_error.style.display = "block";
+    email_error.style.marginBottom = "15px";
+    email.style.marginBottom = "0px";
+  } else {
     email.style.border = "2px solid silver";
     email_error.style.display = "none";
-    return true;
+    email.style.marginBottom = "27px";
   }
-}
 
-function password_verify() {
-  if (password.value.length >= 6) {
+  if (password.value === "") {
+    password.style.border = "2px solid red";
+    pass_error.style.display = "block";
+    pass_error.style.marginBottom = "15px";
+    password.style.marginBottom = "0px";
+  } else {
     password.style.border = "2px solid silver";
     pass_error.style.display = "none";
-    return true;
+    password.style.marginBottom = "27px";
   }
-}
+});
