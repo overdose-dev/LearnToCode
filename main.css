@@ -227,7 +227,7 @@ a {
   .form #lastName_error,
   .form #email_error,
   .form #pass_error {
-    margin: 7px -225px 0 0;
+    margin: 7px -205px 0 0;
   }
 
   #submit {
